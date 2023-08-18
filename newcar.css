@@ -1,0 +1,290 @@
+
+#bgcolor {
+  width: 100%;
+  height: max-content;
+  /* background-color: "white"; */
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  background-color: white;
+
+  left: 0;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 55px;
+  border-bottom: solid grey 1px;
+
+  color: black;
+}
+.search-bar {
+  display: inline-flex;
+  width: 45%;
+  border: solid red 2px;
+  /* border: solid lightgray 1px; */
+  height: fit-content;
+}
+.search-bar input {
+  border: none;
+  background: transparent;
+  width: 80%;
+  height: 35px;
+}
+.search-bar button {
+  border: none;
+  background: transparent;
+  width: 100px;
+  height: 35px;
+}
+#Back {
+  width: 42px;
+  border: solid 1px orangered;
+  font-weight: bold;
+  text-align: center;
+  background: transparent;
+  height: 40px;
+  border-radius: 100%;
+}
+
+
+@media screen and (max-width :600px) {
+  .search-bar {
+  
+    border: solid red 2px;
+    width: 100%;
+    border: solid lightgray 1px;
+    height: fit-content;
+  }  
+  
+  .search-bar input{
+    width: 150px;
+    height: 10px;
+  }
+  #Back {
+    width: 30px;
+    height: 30px;
+    
+  }
+  .search-bar button {
+    /* border: solid red 2px; */
+    width: 50px;
+    height: 35px;
+  }
+  
+  
+}
+/* --------------------------toogle-btn ------------------------------*/
+
+.mode {
+  display: flex;
+  float: right;
+  align-items: center;
+}
+.mode2 {
+  position: relative;
+  background-color: rgb(204, 204, 204);
+  cursor: pointer;
+  border-radius: 20px;
+  width: 50px;
+  height: 25px;
+  margin: 5px;
+}
+.mode2::before {
+  position: absolute;
+  content: "";
+  background-color: rgb(48, 183, 224);
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 2.5px;
+  transition: 0.5s;
+}
+.mode2.active::before {
+  /* left: 24px; */
+  background-color: white;
+}
+body.night {
+  background-color: black;
+  color: white;
+}
+
+input:checked + .mode2 {
+  background-color: rgb(107, 104, 104);
+}
+
+input:checked + .mode2::before {
+  transform: translateX(25px);
+}
+.mode input {
+  display: none;
+}
+#search::-webkit-input-placeholder{
+font-size: 15px  ;
+text-align: center;
+}
+
+.aside {
+  width: 140px;
+  height: 100%;
+  position: fixed;
+  color: snow;
+  background-color: rgb(0, 108, 145);
+  /* position: fixed; */
+  /* border: solid red 2px; */
+  /* top: 65px; */
+  text-align: center;
+  top: 55px;
+  left: 0;
+  padding: 10px 20px;
+}
+.filters {
+  width: 100%;
+  display: grid;
+  /* border: solid blue 2px; */
+  /* display: grid; */
+  grid-template-columns: repeat(1, 100px);
+
+  height: 400px;
+  align-items: start;
+}
+
+.filters button {
+  /* border: solid red 1px; */
+  width: 130px;
+  height: 55px;
+  color: snow;
+  font-size: 20px;
+  text-align: left;
+  border: none;
+  background: transparent;
+}
+.contain {
+ 
+  display: grid;
+  grid-template-columns: repeat(2, 460px);
+  grid-gap: 50px;
+ float: right;
+  margin-top: 10px;
+  margin-right:  70px;
+ 
+  /* float: right; */
+  /* border: solid red 2px; */
+ width: max-content ;
+  height: max-content;
+}
+
+.cars {
+
+  border-radius: 10px;
+  width: 450px;
+  text-align: center;
+  height: 550px;
+
+  /* border: solid red 2px; */
+  box-shadow: 1px 1px 20px 1px lightgray;
+}
+.cars h2{
+  font-size: 30px;
+  max-inline-size: 550px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* border: solid red 2px; */
+}
+.cars img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 450px;
+  height: 300px;
+}
+.heading {
+  margin-left: 170px;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 70px;
+  color: rgb(0, 108, 145);
+}
+
+#month {
+  margin-top: 10px;
+  border: solid grey 1px;
+  border-radius: 10px;
+  width: 90px;
+  height: fit-content;
+  text-align: center;
+  /* margin-left: 50px; */
+  /* box-shadow:  1px 1px 10px 1px lightgray ; */
+  line-height: 5px;
+}
+
+.vicle-info {
+  width: 100%;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: space-evenly;
+  height: fit-content;
+  /* border: solid red 2px; */
+}
+#fixed-p {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(111, 151, 177);
+}
+
+#value {
+  font-size: 18px;
+}
+.bi-calendar4-event {
+  width: 20px;
+  margin-top: 10px;
+}
+@media screen and (max-width :600px) {
+  .aside{
+    display: none;
+  }
+  .heading {
+   display: flex;
+   width: 100%;
+  align-items: center;
+   justify-content: center;
+   margin-left: 0px;
+   font-size: 20px;
+   border:  solid red 2px;
+  }
+
+  .contain {
+ 
+    display: grid;
+    grid-template-columns: repeat(1, 260px);
+    grid-gap: 50px;
+   float: right;
+    margin-top: 10px;
+    margin-right:  0px;
+   
+    /* float: right; */
+    /* border: solid red 2px; */
+   width: 100% ;
+    height: max-content;
+  }
+  .cars {
+
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    height: 550px;
+  
+    /* border: solid red 2px; */
+    box-shadow: 1px 1px 20px 1px lightgray;
+  }
+  .cars img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    width: 250px;
+    height: 300px;
+  }
+
+}

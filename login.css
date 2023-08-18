@@ -1,0 +1,180 @@
+
+*{
+  margin: 0;
+   padding: 0;
+
+ 
+}   
+
+.header{
+    height: 100%;
+    width: 100%;
+    background-image: url('red-nissan-gtr-r34-02-1920x1080.jpg');
+   
+    background-size: cover;
+  background-position: center;
+  position: absolute;
+     background-repeat: no-repeat;
+    
+}
+
+.header-box{
+    /* margin-left: 500px; */
+    width: 350px;
+    height: 470px;
+    overflow: hidden;
+    float:right;
+    margin-top: 50px;
+    margin-right: 480px;
+    position:  relative;
+    /* margin: 6% auto; */
+    /* background-color: #fff; */
+    padding: 5px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  
+    
+}
+
+.btn-first{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: inset 0px 0px 10px 9px lightgrey;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px ;
+    cursor: pointer;
+    background: transparent;
+    /* border-radius: 30px; */
+    border: 0;
+    outline: none;
+    position: relative;
+    color: snow;
+}
+#color-btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: orangered;
+    border-radius: 30px;
+    transition: .5s;
+
+}
+
+.social-icon{
+    margin: 20px auto;
+    text-align: center;
+    /* border: solid red 2px; */
+}
+.social-icon svg{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 12 0 lightgrey;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.btn-group{
+    top: 150px;
+    /* height: 100px; */
+    position: absolute;
+    width: 350px;
+    transition: .5s;
+    /* overflow: hidden; */
+    /* border: solid red 2px; */
+}
+
+.input-data{
+    width: 90%;
+    color: snow;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 0;
+    /* margin: 12px 30px; */
+    margin: 15px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid snow;
+    outline: none;
+    background: transparent;
+}
+.submit-btn1{
+    width: 55%;
+    height: 40px;
+    margin-top: 50px;
+    /* padding: 10px 30px; */
+    cursor: pointer;
+    display: block;
+    /* margin: auto; */
+    margin-left: 80px;
+    background: orangered;
+    border: 0;
+    color: snow;
+    text-align: center;
+    outline: none;
+    border-radius: 30px;
+}
+
+#check-box{
+    /* margin: 10px 10px 30px 0px; */
+    margin-top: 10px;
+    margin-left: 20px;
+    /* border: solid red 2px; */
+}
+#hello{
+    color:snow;
+    font-size: 15px;
+   
+  margin-left: 15px;
+    bottom: 93px;
+    position: absolute;
+    /* text-align: center; */
+    /* border: solid red 2px; */
+  
+}
+
+#login{
+    left: 0px;
+}
+
+#sign-in{
+    left: 450px;
+}
+
+.input-data[type="text"]::-webkit-input-placeholder{
+  color: snow;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.input-data[type="password"]::-webkit-input-placeholder{
+    color: snow;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .input-data[type="email"]::-webkit-input-placeholder{
+    color: snow;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+.Back{
+ width: 50px;
+ height: 50px;
+ margin-left: 30px;
+ margin-top: 10px;
+ border-radius: 100%;  
+  color: black;
+ background-color: snow;
+ /* background-color: rgb(0,0,0);
+ background-color: rgba(0,0,0,0.4); */
+
+}

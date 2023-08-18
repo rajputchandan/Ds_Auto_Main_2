@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="light">Light</p>
+    <button onclick="Switch()">Change</button>
+  </body>
+</html>
+<script>
+  function Switch() {
+    // alert("Dark  mode Enabled");
+    var change = (document.getElementById("light").value = "light");
+    if (change === "light") {
+      document.getElementById("light").innerHTML = "dark";
+    } else {
+      document.getElementById("light").innerHTML = "light";
+    }
+  }
+  //   let Switch = () => {
+  //     document.getElementById("light").innerHTML = "dark";
+  //     alert("dark mode enabled");
+  //   };
+</script>
